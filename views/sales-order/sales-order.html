@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Orders</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/styles/style.css">
+    <script src="../../assets/scripts/sales-order.js" defer></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <p class="nav-link">Halo, Pak Wahyu</p>
+                        </li>
+                        <li class="nav-item">
+                            <p id="logout" class="nav-link">Logout</p>
+                        </li>
+                        <li class="nav-item">
+                            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                                <span>Master Data</span>
+                            </h6>
+                            <ul class="nav flex-column mb-2">
+                                <li class="nav-item">
+                                    <p id="customer-link" class="nav-link">Customer</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p id="product-link" class="nav-link">Product</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                                <span>Transaction</span>
+                            </h6>
+                            <ul class="nav flex-column mb-2">
+                                <li class="nav-item">
+                                    <p id="sales-order-link" class="nav-link">Sales Order</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2"><a href="../../index.html" class="text-decoration-none text-dark">Sales Web App</a></h1>
+                </div>
+                <h2>Transaction - Sales Orders</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Order Number</th>
+                            <th>Order Date</th>
+                            <th>Customer</th>
+                            <th>Total</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sales-order-table-body">
+                        <!-- Sales order rows will be populated here by JavaScript -->
+                    </tbody>
+                </table>
+                <button id="add-sales-order-btn" class="btn btn-primary">Add Sales Order</button>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
